@@ -465,9 +465,9 @@
         CGSize labelSize = [_pieceName sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.label.fontSize]}];
 
         // TODO: "need to do something with it, can't be just magic number"
-        if (labelSize.width > 50) {
-            labelSize.width = 50;
-        }
+//        if (labelSize.width > 50) {
+//            labelSize.width = 50;
+//        }
         [CATransaction begin];
         [CATransaction setDisableActions:YES];
         
@@ -521,7 +521,7 @@
 
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
-    [self.label setFrame:CGRectMake(0, 0, 30, 14)];
+    [self.label setFrame:CGRectMake(0, 0, 100, 14)];
 }
 
 - (BOOL) containsPoint:(CGPoint)point {
