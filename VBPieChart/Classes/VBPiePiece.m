@@ -452,8 +452,9 @@
             {
                 CGFloat h = sqrt(center.x*center.x + center.y*center.y);
                 CGFloat labelr = MIN(superSize.width, superSize.height) / 2.0 + _label.frame.size.width/2.0;
+                CGFloat labelry = MIN(superSize.width, superSize.height) / 2.0 + 5;
                 center.x = superSize.width/2.0 + (center.x/h * labelr);
-                center.y = superSize.height/2.0 + (center.y/h * labelr);
+                center.y = superSize.height/2.0 + (center.y/h * labelry);
             }
                 break;
             case VBLabelsPositionNone:
